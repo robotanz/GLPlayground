@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EA621E218141C8F004FB89B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA621E118141C8F004FB89B /* Cocoa.framework */; };
+		7EA621EC18141C8F004FB89B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EA621EA18141C8F004FB89B /* InfoPlist.strings */; };
+		7EA621EE18141C8F004FB89B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA621ED18141C8F004FB89B /* main.m */; };
+		7EA621F218141C8F004FB89B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7EA621F018141C8F004FB89B /* Credits.rtf */; };
+		7EA621F518141C8F004FB89B /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA621F418141C8F004FB89B /* RTAppDelegate.m */; };
+		7EA621F818141C8F004FB89B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA621F618141C8F004FB89B /* MainMenu.xib */; };
+		7EA621FA18141C8F004FB89B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA621F918141C8F004FB89B /* Images.xcassets */; };
+		7EA6220118141C90004FB89B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6220018141C90004FB89B /* XCTest.framework */; };
+		7EA6220218141C90004FB89B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA621E118141C8F004FB89B /* Cocoa.framework */; };
+		7EA6220A18141C90004FB89B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EA6220818141C90004FB89B /* InfoPlist.strings */; };
+		7EA6220C18141C90004FB89B /* GLPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA6220B18141C90004FB89B /* GLPlaygroundTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EA6220318141C90004FB89B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EA621D618141C8F004FB89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EA621DD18141C8F004FB89B;
+			remoteInfo = GLPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EA621DE18141C8F004FB89B /* GLPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA621E118141C8F004FB89B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7EA621E418141C8F004FB89B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7EA621E518141C8F004FB89B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7EA621E618141C8F004FB89B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EA621E918141C8F004FB89B /* GLPlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLPlayground-Info.plist"; sourceTree = "<group>"; };
+		7EA621EB18141C8F004FB89B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EA621ED18141C8F004FB89B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EA621EF18141C8F004FB89B /* GLPlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLPlayground-Prefix.pch"; sourceTree = "<group>"; };
+		7EA621F118141C8F004FB89B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7EA621F318141C8F004FB89B /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		7EA621F418141C8F004FB89B /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		7EA621F718141C8F004FB89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7EA621F918141C8F004FB89B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7EA621FF18141C90004FB89B /* GLPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA6220018141C90004FB89B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7EA6220718141C90004FB89B /* GLPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
+		7EA6220918141C90004FB89B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EA6220B18141C90004FB89B /* GLPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLPlaygroundTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EA621DB18141C8F004FB89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA621E218141C8F004FB89B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA621FC18141C90004FB89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA6220218141C90004FB89B /* Cocoa.framework in Frameworks */,
+				7EA6220118141C90004FB89B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EA621D518141C8F004FB89B = {
+			isa = PBXGroup;
+			children = (
+				7EA621E718141C8F004FB89B /* GLPlayground */,
+				7EA6220518141C90004FB89B /* GLPlaygroundTests */,
+				7EA621E018141C8F004FB89B /* Frameworks */,
+				7EA621DF18141C8F004FB89B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA621DF18141C8F004FB89B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA621DE18141C8F004FB89B /* GLPlayground.app */,
+				7EA621FF18141C90004FB89B /* GLPlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EA621E018141C8F004FB89B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA621E118141C8F004FB89B /* Cocoa.framework */,
+				7EA6220018141C90004FB89B /* XCTest.framework */,
+				7EA621E318141C8F004FB89B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EA621E318141C8F004FB89B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA621E418141C8F004FB89B /* AppKit.framework */,
+				7EA621E518141C8F004FB89B /* CoreData.framework */,
+				7EA621E618141C8F004FB89B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7EA621E718141C8F004FB89B /* GLPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				7EA621F318141C8F004FB89B /* RTAppDelegate.h */,
+				7EA621F418141C8F004FB89B /* RTAppDelegate.m */,
+				7EA621F618141C8F004FB89B /* MainMenu.xib */,
+				7EA621F918141C8F004FB89B /* Images.xcassets */,
+				7EA621E818141C8F004FB89B /* Supporting Files */,
+			);
+			path = GLPlayground;
+			sourceTree = "<group>";
+		};
+		7EA621E818141C8F004FB89B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EA621E918141C8F004FB89B /* GLPlayground-Info.plist */,
+				7EA621EA18141C8F004FB89B /* InfoPlist.strings */,
+				7EA621ED18141C8F004FB89B /* main.m */,
+				7EA621EF18141C8F004FB89B /* GLPlayground-Prefix.pch */,
+				7EA621F018141C8F004FB89B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EA6220518141C90004FB89B /* GLPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EA6220B18141C90004FB89B /* GLPlaygroundTests.m */,
+				7EA6220618141C90004FB89B /* Supporting Files */,
+			);
+			path = GLPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		7EA6220618141C90004FB89B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EA6220718141C90004FB89B /* GLPlaygroundTests-Info.plist */,
+				7EA6220818141C90004FB89B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EA621DD18141C8F004FB89B /* GLPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA6220F18141C90004FB89B /* Build configuration list for PBXNativeTarget "GLPlayground" */;
+			buildPhases = (
+				7EA621DA18141C8F004FB89B /* Sources */,
+				7EA621DB18141C8F004FB89B /* Frameworks */,
+				7EA621DC18141C8F004FB89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLPlayground;
+			productName = GLPlayground;
+			productReference = 7EA621DE18141C8F004FB89B /* GLPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EA621FE18141C90004FB89B /* GLPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA6221218141C90004FB89B /* Build configuration list for PBXNativeTarget "GLPlaygroundTests" */;
+			buildPhases = (
+				7EA621FB18141C90004FB89B /* Sources */,
+				7EA621FC18141C90004FB89B /* Frameworks */,
+				7EA621FD18141C90004FB89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EA6220418141C90004FB89B /* PBXTargetDependency */,
+			);
+			name = GLPlaygroundTests;
+			productName = GLPlaygroundTests;
+			productReference = 7EA621FF18141C90004FB89B /* GLPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EA621D618141C8F004FB89B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Thomas Jgenti";
+				TargetAttributes = {
+					7EA621FE18141C90004FB89B = {
+						TestTargetID = 7EA621DD18141C8F004FB89B;
+					};
+				};
+			};
+			buildConfigurationList = 7EA621D918141C8F004FB89B /* Build configuration list for PBXProject "GLPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EA621D518141C8F004FB89B;
+			productRefGroup = 7EA621DF18141C8F004FB89B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EA621DD18141C8F004FB89B /* GLPlayground */,
+				7EA621FE18141C90004FB89B /* GLPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA621DC18141C8F004FB89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA621EC18141C8F004FB89B /* InfoPlist.strings in Resources */,
+				7EA621FA18141C8F004FB89B /* Images.xcassets in Resources */,
+				7EA621F218141C8F004FB89B /* Credits.rtf in Resources */,
+				7EA621F818141C8F004FB89B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA621FD18141C90004FB89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA6220A18141C90004FB89B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EA621DA18141C8F004FB89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA621F518141C8F004FB89B /* RTAppDelegate.m in Sources */,
+				7EA621EE18141C8F004FB89B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA621FB18141C90004FB89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA6220C18141C90004FB89B /* GLPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EA6220418141C90004FB89B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EA621DD18141C8F004FB89B /* GLPlayground */;
+			targetProxy = 7EA6220318141C90004FB89B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EA621EA18141C8F004FB89B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA621EB18141C8F004FB89B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EA621F018141C8F004FB89B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA621F118141C8F004FB89B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7EA621F618141C8F004FB89B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA621F718141C8F004FB89B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7EA6220818141C90004FB89B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA6220918141C90004FB89B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EA6220D18141C90004FB89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7EA6220E18141C90004FB89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7EA6221018141C90004FB89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLPlayground/GLPlayground-Prefix.pch";
+				INFOPLIST_FILE = "GLPlayground/GLPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7EA6221118141C90004FB89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLPlayground/GLPlayground-Prefix.pch";
+				INFOPLIST_FILE = "GLPlayground/GLPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7EA6221318141C90004FB89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLPlayground.app/Contents/MacOS/GLPlayground";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLPlayground/GLPlayground-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GLPlaygroundTests/GLPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7EA6221418141C90004FB89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLPlayground.app/Contents/MacOS/GLPlayground";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLPlayground/GLPlayground-Prefix.pch";
+				INFOPLIST_FILE = "GLPlaygroundTests/GLPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EA621D918141C8F004FB89B /* Build configuration list for PBXProject "GLPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA6220D18141C90004FB89B /* Debug */,
+				7EA6220E18141C90004FB89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA6220F18141C90004FB89B /* Build configuration list for PBXNativeTarget "GLPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA6221018141C90004FB89B /* Debug */,
+				7EA6221118141C90004FB89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EA6221218141C90004FB89B /* Build configuration list for PBXNativeTarget "GLPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA6221318141C90004FB89B /* Debug */,
+				7EA6221418141C90004FB89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EA621D618141C8F004FB89B /* Project object */;
+}
