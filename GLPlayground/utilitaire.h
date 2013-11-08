@@ -15,6 +15,8 @@ float get_time(){
 	return chrono::duration_cast<chrono::milliseconds>(now_time - init_time).count() / 1000.f;
 }
 
+// tres utile!
+
 /* report GL errors, if any, to stderr */
 void checkError(const char *functionName)
 {
