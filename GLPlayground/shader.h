@@ -146,8 +146,8 @@ static GLuint create_program(string const vert_shader, string const frag_shader,
 	GLuint geom_name;
 
 	if(use_tess){
-		tc_name = glCreateShader(GL_TESS_CONTROL_SHADER);
-		te_name = glCreateShader(GL_TESS_EVALUATION_SHADER);
+//		tc_name = glCreateShader(GL_TESS_CONTROL_SHADER);
+//		te_name = glCreateShader(GL_TESS_EVALUATION_SHADER);
 		geom_name = glCreateShader(GL_GEOMETRY_SHADER);
 	}
 
@@ -163,17 +163,17 @@ static GLuint create_program(string const vert_shader, string const frag_shader,
 	glShaderSource(frag_name, 1, &str,&sz); 
 
 	if(use_tess){
-		str = tc_code.c_str();
-		sz = tc_code.size();
-		glShaderSource(tc_name, 1, &str, &sz);
-
-		str = te_code.c_str();
-		sz = te_code.size();
-		glShaderSource(te_name, 1, &str, &sz);
-
-		str = geom_code.c_str();
-		sz = geom_code.size();
-		glShaderSource(geom_name, 1, &str, &sz);
+//		str = tc_code.c_str();
+//		sz = tc_code.size();
+//		glShaderSource(tc_name, 1, &str, &sz);
+//
+//		str = te_code.c_str();
+//		sz = te_code.size();
+//		glShaderSource(te_name, 1, &str, &sz);
+//
+//		str = geom_code.c_str();
+//		sz = geom_code.size();
+//		glShaderSource(geom_name, 1, &str, &sz);
 	}
 
 	// 2) on compile les shaders
