@@ -15,7 +15,6 @@
 		7EA6221618141CAF004FB89B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6221518141CAF004FB89B /* OpenGL.framework */; };
 		7EB4E4491817152D00DBFF9E /* RTViewGL3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4E4481817152D00DBFF9E /* RTViewGL3.mm */; };
 		7EDB5205182C4EA400AC4238 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5120182C4EA300AC4238 /* CMakeLists.txt */; };
-		7EDB5206182C4EA400AC4238 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB5127182C4EA300AC4238 /* dummy.cpp */; };
 		7EDB5207182C4EA400AC4238 /* func_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5129182C4EA300AC4238 /* func_common.inl */; };
 		7EDB5208182C4EA400AC4238 /* func_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB512B182C4EA300AC4238 /* func_exponential.inl */; };
 		7EDB5209182C4EA400AC4238 /* func_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB512D182C4EA300AC4238 /* func_geometric.inl */; };
@@ -117,6 +116,7 @@
 		7EDB5269182C4EA400AC4238 /* vector_query.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51FE182C4EA400AC4238 /* vector_query.inl */; };
 		7EDB526A182C4EA400AC4238 /* verbose_operator.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5200182C4EA400AC4238 /* verbose_operator.inl */; };
 		7EDB526B182C4EA400AC4238 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5202182C4EA400AC4238 /* wrap.inl */; };
+		7EDB526E182C536C00AC4238 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB526C182C536C00AC4238 /* ShaderProgram.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -361,6 +361,8 @@
 		7EDB5201182C4EA400AC4238 /* wrap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wrap.hpp; sourceTree = "<group>"; };
 		7EDB5202182C4EA400AC4238 /* wrap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wrap.inl; sourceTree = "<group>"; };
 		7EDB5204182C4EA400AC4238 /* xstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xstream.hpp; sourceTree = "<group>"; };
+		7EDB526C182C536C00AC4238 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		7EDB526D182C536C00AC4238 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,8 @@
 				7EDB511E182C474800AC4238 /* GLSL */,
 				7EA621E818141C8F004FB89B /* Supporting Files */,
 				7EDB511F182C4EA300AC4238 /* glm */,
+				7EDB526C182C536C00AC4238 /* ShaderProgram.cpp */,
+				7EDB526D182C536C00AC4238 /* ShaderProgram.h */,
 			);
 			path = GLPlayground;
 			sourceTree = "<group>";
@@ -880,7 +884,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EDB5206182C4EA400AC4238 /* dummy.cpp in Sources */,
+				7EDB526E182C536C00AC4238 /* ShaderProgram.cpp in Sources */,
 				7EB4E4491817152D00DBFF9E /* RTViewGL3.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -940,10 +944,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-I.";
+				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
@@ -974,10 +978,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = "-I.";
+				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};
@@ -989,13 +993,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLPlayground/GLPlayground-Prefix.pch";
 				INFOPLIST_FILE = "GLPlayground/GLPlayground-Info.plist";
-				OTHER_CFLAGS = "-I.";
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-I${SRCROOT}",
-				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				SDKROOT = macosx10.8;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1008,13 +1010,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLPlayground/GLPlayground-Prefix.pch";
 				INFOPLIST_FILE = "GLPlayground/GLPlayground-Info.plist";
-				OTHER_CFLAGS = "-I.";
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-I${SRCROOT}",
-				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				SDKROOT = macosx10.8;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
