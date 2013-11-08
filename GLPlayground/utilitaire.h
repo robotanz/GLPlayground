@@ -17,6 +17,7 @@ float get_time(){
 
 // tres utile!
 // owi
+// oh non
 
 /* report GL errors, if any, to stderr */
 void checkError(const char *functionName)
