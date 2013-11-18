@@ -1,16 +1,4 @@
 enum {
-	UniformTime,
-	UniformMouse,
-	UniformModelMatrix,
-	UniformViewMatrix,
-	UniformProjMatrix,
-	UniformEye,
-	UniformLightTable,
-	UniformTexture,
-	UNIFORM_MAX
-};
-
-enum {
 	ProgramLight,
 	ProgramTexture,
 	ProgramPostProcess,
@@ -105,7 +93,7 @@ static string read_file(string const name){
 //    strcat(filename, name.c_str());
     
 //	file.open((string(shaderPath) + name).c_str());
-	file.open((string("/Users/jgenti/Development/xcode-git/GLPlayground/GLPlayground/") + name).c_str());
+	file.open((string("/Users/Samoustique/Documents/Programmation/openGL/GLPlayground/GLPlayground/") + name).c_str());
 	string text;
 	file.seekg(0, ios::end);
     

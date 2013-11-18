@@ -121,11 +121,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		462B072E18290FD1001C8A11 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
 		462B072F18290FD1001C8A11 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		462B0730182986CB001C8A11 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
 		462B0731182986CB001C8A11 /* vertexShader_old.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader_old.glsl; sourceTree = "<group>"; };
 		462B0746182AC5D8001C8A11 /* utilitaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilitaire.h; sourceTree = "<group>"; };
+		46B0C91618368D750086B74A /* Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ground.h; sourceTree = "<group>"; };
+		46B0C91818368F420086B74A /* Torus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torus.h; sourceTree = "<group>"; };
+		46B0C91918368FAD0086B74A /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		46B0C91A183695D40086B74A /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
 		7EA621DE18141C8F004FB89B /* GLPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA621E118141C8F004FB89B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7EA621E418141C8F004FB89B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -380,6 +383,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46B0C91418368BB30086B74A /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				46B0C91618368D750086B74A /* Ground.h */,
+				46B0C91818368F420086B74A /* Torus.h */,
+				46B0C91918368FAD0086B74A /* Cube.h */,
+				46B0C91A183695D40086B74A /* Mesh.h */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
 		7EA621D518141C8F004FB89B = {
 			isa = PBXGroup;
 			children = (
@@ -420,8 +434,8 @@
 		7EA621E718141C8F004FB89B /* GLPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				46B0C91418368BB30086B74A /* Geometry */,
 				7EB4E4481817152D00DBFF9E /* RTViewGL3.mm */,
-				462B072E18290FD1001C8A11 /* mesh.h */,
 				462B072F18290FD1001C8A11 /* shader.h */,
 				462B0746182AC5D8001C8A11 /* utilitaire.h */,
 				7EDB511E182C474800AC4238 /* GLSL */,

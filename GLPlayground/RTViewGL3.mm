@@ -29,24 +29,26 @@ using namespace std;
 #include "glm/gtc/swizzle.hpp"
 using namespace glm;
 
-
 #include "utilitaire.h"
+#include "ShaderProgram.h"
 
 /* VARIABLES GLOBALES */
 
-int win_w = 400;
-int win_h = 400;
+int win_w = 800;
+int win_h = 600;
 vec2 mouse;
 vector<vec4> light_table;
-mat4 view_matrix, proj_matrix;
+mat4 view_matrix, proj_matrix, model_matrix;
 int static const NB_VBO = 2;
-int static const NB_VAO = 1;
+int static const NB_VAO = 3;
 GLuint vertexArrayObjID[NB_VAO]; // VAO
-#include "mesh.h"
-#include "shader.h"
-mesh *torus;
-program programs[PROGRAM_MAX]; // le program qui va les lier
-
+#include "Torus.h"
+#include "Ground.h"
+#include "Cube.h"
+vector<Mesh*> geometries;
+ShaderProgram *program;
+string vsShader = "vertexShader_old.glsl";
+string fsShader = "fragmentShader.glsl";
 
 
 void init(void)
@@ -57,32 +59,34 @@ void init(void)
 	glEnable(GL_DEPTH_TEST);
 	checkError("GL inits");
     
-    
     glGenVertexArrays(NB_VAO, vertexArrayObjID);
     
-    /* TORUS MESH */
+    /* FILL GEOMETRY */
     
-	torus = new mesh(0); // je donne en param l'indice du VAO correspondant
-	//torus->make_quad();
-    torus->make_torus(0.2f, 50, 50);
-	torus->upload();
+    geometries.push_back(new Torus(0.2f, 50, 50));
+    geometries.push_back(new Cube());
+    geometries.push_back(new Ground());
+    
+    for(int i = 0 ; i < geometries.size() ; ++i){
+        geometries[i]->make();
+        geometries[i]->upload();
+    }
     
     /* SHADERS & PROGRAM */
     
-	programs[ProgramLight].name = create_program("vertexShader_old.glsl", "fragmentShader.glsl");
-	programs[ProgramLight].get_uniforms();
+    program = new ShaderProgram(vsShader, fsShader);
     
     /* CAMERA */
     
-	view_matrix = lookAt(vec3(0.f, 1.8f, 3.f), vec3(0.f, 1.5f, 0.f), vec3(0.f, 1.f, 0.f)); // param1 : coordonnees de l'oeil. param2 : le centre de ce que l'on veut regarder (gere donc l'inclinaison). param3 : la vertical (un vecteur).
-	proj_matrix = perspective(50.f, (float) win_w / win_h, 0.2f,100.0f); // param1 : en degres, angle de la camera. param2 : ratio. param3 : near. param4 : far.
+	view_matrix = lookAt(vec3(0.f, 1.8f, 3.f), vec3(0.f, 1.5f, 0.f), vec3(0.f, 1.f, 0.f));
+	proj_matrix = perspective(50.f, (float) win_w / win_h, 0.2f,100.0f);
     
 	/* LIGHTS */
     
-    light_table.push_back(vec4(1.f, 1.8f, -3.f, 1.f));// On place cette light 1 metre a droite de la camera + devant nous
-	light_table.push_back(vec4(0.8f, 0.5f, 0.5f, 50.f)); // la couleur
-	light_table.push_back(vec4(-0.2f, -1.0f, 0.f, 0.f)); // On place cette light au dessus du tore (directionnelle) un peu a gauche
-	light_table.push_back(vec4(0.f, 1.f, 1.0f, 10.f)); // la couleur
+    light_table.push_back(vec4(1.f, 1.8f, -3.f, 1.f));
+	light_table.push_back(vec4(0.8f, 0.5f, 0.5f, 50.f)); // color
+	light_table.push_back(vec4(-0.2f, -1.0f, 0.f, 0.f));
+	light_table.push_back(vec4(0.f, 1.f, 1.0f, 10.f)); // color
     
 	checkError("init");
 }
@@ -91,30 +95,25 @@ void display(void)
 {
 	checkError("pre display");
     
-    glViewport(0, 0, 1000, 800);
+    glViewport(0, 0, win_w, win_h);
     
 	// clear the screen
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    // on va rebinder les buffers pour pouvoir les utiliser. Et le program
-    glUseProgram(programs[ProgramLight].name);
-	programs[ProgramLight].set_uniforms();
+    float time = get_time();
     
-    /* RENDER TORUS */
+    program->useProgram();
+	program->sendUniforms(time, mouse, view_matrix, proj_matrix, light_table);
     
-	mat4 model_matrix;
-	model_matrix = translate(mat4(1.f), vec3(0.f, 1.f + 1.f, 0.f)); // TRANSLATE => on monte le tore de 100cm en hauteur
-	model_matrix = scale(model_matrix, vec3(0.30f));
-	model_matrix = rotate(model_matrix, get_time() * 100.f, vec3(1.f, 1.f, 0.f));
-	// SCALE => param1 : transformation precedente, ici on met matrice unite (le 1.f est juste en diagonale). param2 : le 0.30f par contre se met dans chaque composoante. Le tore fera 30cm de diametre.
-	// ROTATE => param2 : angle. param3 : axe de rotation.
+    for(int i = 0 ; i < geometries.size() ; ++i){
+        geometries[i]->updateMatrixModel(model_matrix, time, mouse, program->getUniform(program->UniformModelMatrix));
+        geometries[i]->setSpecialParameters();
+        geometries[i]->bind();
+        geometries[i]->draw(program);
+        geometries[i]->unbind();
+    }
     
-	glUniformMatrix4fv(programs[ProgramLight].uniforms[UniformModelMatrix], 1, GL_FALSE, &model_matrix[0][0]);
-	torus->bind();
-    torus->draw(programs[ProgramLight].name);
-	torus->unbind();
-    
-    glUseProgram(0);
+    program->stopProgram();
     
 	checkError("display");
 }
@@ -233,9 +232,9 @@ int main(int argc, const char *argv[])
 {
 	pool = [NSAutoreleasePool new];
 	myApp = [NSApplication sharedApplication];
-   // printf("Current Path: %s\n",[[[NSFileManager defaultManager] currentDirectoryPath] cString]);
+    // printf("Current Path: %s\n",[[[NSFileManager defaultManager] currentDirectoryPath] cString]);
     
-	NSRect frame = NSMakeRect(100., 100., 1000., 800.);
+	NSRect frame = NSMakeRect(100., 100., win_w, win_h);
     
 	window = [NSWindow alloc];
 	[window initWithContentRect:frame
