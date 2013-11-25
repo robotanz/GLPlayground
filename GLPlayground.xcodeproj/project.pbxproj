@@ -14,110 +14,9 @@
 		7EA621F218141C8F004FB89B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7EA621F018141C8F004FB89B /* Credits.rtf */; };
 		7EA6221618141CAF004FB89B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6221518141CAF004FB89B /* OpenGL.framework */; };
 		7EB4E4491817152D00DBFF9E /* RTViewGL3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4E4481817152D00DBFF9E /* RTViewGL3.mm */; };
-		7EDB5205182C4EA400AC4238 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5120182C4EA300AC4238 /* CMakeLists.txt */; };
-		7EDB5207182C4EA400AC4238 /* func_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5129182C4EA300AC4238 /* func_common.inl */; };
-		7EDB5208182C4EA400AC4238 /* func_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB512B182C4EA300AC4238 /* func_exponential.inl */; };
-		7EDB5209182C4EA400AC4238 /* func_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB512D182C4EA300AC4238 /* func_geometric.inl */; };
-		7EDB520A182C4EA400AC4238 /* func_integer.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB512F182C4EA300AC4238 /* func_integer.inl */; };
-		7EDB520B182C4EA400AC4238 /* func_matrix.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5131182C4EA300AC4238 /* func_matrix.inl */; };
-		7EDB520C182C4EA400AC4238 /* func_noise.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5133182C4EA300AC4238 /* func_noise.inl */; };
-		7EDB520D182C4EA400AC4238 /* func_packing.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5135182C4EA300AC4238 /* func_packing.inl */; };
-		7EDB520E182C4EA400AC4238 /* func_trigonometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5137182C4EA300AC4238 /* func_trigonometric.inl */; };
-		7EDB520F182C4EA400AC4238 /* func_vector_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5139182C4EA300AC4238 /* func_vector_relational.inl */; };
-		7EDB5210182C4EA400AC4238 /* intrinsic_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB513C182C4EA300AC4238 /* intrinsic_common.inl */; };
-		7EDB5211182C4EA400AC4238 /* intrinsic_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB513E182C4EA300AC4238 /* intrinsic_exponential.inl */; };
-		7EDB5212182C4EA400AC4238 /* intrinsic_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5140182C4EA300AC4238 /* intrinsic_geometric.inl */; };
-		7EDB5213182C4EA400AC4238 /* intrinsic_matrix.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5142182C4EA300AC4238 /* intrinsic_matrix.inl */; };
-		7EDB5214182C4EA400AC4238 /* intrinsic_trigonometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5144182C4EA300AC4238 /* intrinsic_trigonometric.inl */; };
-		7EDB5215182C4EA400AC4238 /* intrinsic_vector_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5146182C4EA300AC4238 /* intrinsic_vector_relational.inl */; };
-		7EDB5216182C4EA400AC4238 /* type_gentype.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB514B182C4EA300AC4238 /* type_gentype.inl */; };
-		7EDB5217182C4EA400AC4238 /* type_half.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB514D182C4EA400AC4238 /* type_half.inl */; };
-		7EDB5218182C4EA400AC4238 /* type_mat.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5150182C4EA400AC4238 /* type_mat.inl */; };
-		7EDB5219182C4EA400AC4238 /* type_mat2x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5152182C4EA400AC4238 /* type_mat2x2.inl */; };
-		7EDB521A182C4EA400AC4238 /* type_mat2x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5154182C4EA400AC4238 /* type_mat2x3.inl */; };
-		7EDB521B182C4EA400AC4238 /* type_mat2x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5156182C4EA400AC4238 /* type_mat2x4.inl */; };
-		7EDB521C182C4EA400AC4238 /* type_mat3x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5158182C4EA400AC4238 /* type_mat3x2.inl */; };
-		7EDB521D182C4EA400AC4238 /* type_mat3x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB515A182C4EA400AC4238 /* type_mat3x3.inl */; };
-		7EDB521E182C4EA400AC4238 /* type_mat3x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB515C182C4EA400AC4238 /* type_mat3x4.inl */; };
-		7EDB521F182C4EA400AC4238 /* type_mat4x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB515E182C4EA400AC4238 /* type_mat4x2.inl */; };
-		7EDB5220182C4EA400AC4238 /* type_mat4x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5160182C4EA400AC4238 /* type_mat4x3.inl */; };
-		7EDB5221182C4EA400AC4238 /* type_mat4x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5162182C4EA400AC4238 /* type_mat4x4.inl */; };
-		7EDB5222182C4EA400AC4238 /* type_vec.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5165182C4EA400AC4238 /* type_vec.inl */; };
-		7EDB5223182C4EA400AC4238 /* type_vec1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5167182C4EA400AC4238 /* type_vec1.inl */; };
-		7EDB5224182C4EA400AC4238 /* type_vec2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5169182C4EA400AC4238 /* type_vec2.inl */; };
-		7EDB5225182C4EA400AC4238 /* type_vec3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB516B182C4EA400AC4238 /* type_vec3.inl */; };
-		7EDB5226182C4EA400AC4238 /* type_vec4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB516D182C4EA400AC4238 /* type_vec4.inl */; };
-		7EDB5227182C4EA400AC4238 /* constants.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5172182C4EA400AC4238 /* constants.inl */; };
-		7EDB5228182C4EA400AC4238 /* epsilon.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5174182C4EA400AC4238 /* epsilon.inl */; };
-		7EDB5229182C4EA400AC4238 /* half_float.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5176182C4EA400AC4238 /* half_float.inl */; };
-		7EDB522A182C4EA400AC4238 /* matrix_access.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5178182C4EA400AC4238 /* matrix_access.inl */; };
-		7EDB522B182C4EA400AC4238 /* matrix_inverse.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB517B182C4EA400AC4238 /* matrix_inverse.inl */; };
-		7EDB522C182C4EA400AC4238 /* matrix_transform.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB517D182C4EA400AC4238 /* matrix_transform.inl */; };
-		7EDB522D182C4EA400AC4238 /* noise.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB517F182C4EA400AC4238 /* noise.inl */; };
-		7EDB522E182C4EA400AC4238 /* quaternion.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5181182C4EA400AC4238 /* quaternion.inl */; };
-		7EDB522F182C4EA400AC4238 /* random.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5183182C4EA400AC4238 /* random.inl */; };
-		7EDB5230182C4EA400AC4238 /* reciprocal.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5185182C4EA400AC4238 /* reciprocal.inl */; };
-		7EDB5231182C4EA400AC4238 /* swizzle.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5187182C4EA400AC4238 /* swizzle.inl */; };
-		7EDB5232182C4EA400AC4238 /* type_precision.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5189182C4EA400AC4238 /* type_precision.inl */; };
-		7EDB5233182C4EA400AC4238 /* type_ptr.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB518B182C4EA400AC4238 /* type_ptr.inl */; };
-		7EDB5234182C4EA400AC4238 /* ulp.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB518D182C4EA400AC4238 /* ulp.inl */; };
-		7EDB5235182C4EA400AC4238 /* associated_min_max.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5190182C4EA400AC4238 /* associated_min_max.inl */; };
-		7EDB5236182C4EA400AC4238 /* bit.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5192182C4EA400AC4238 /* bit.inl */; };
-		7EDB5237182C4EA400AC4238 /* closest_point.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5194182C4EA400AC4238 /* closest_point.inl */; };
-		7EDB5238182C4EA400AC4238 /* color_cast.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5196182C4EA400AC4238 /* color_cast.inl */; };
-		7EDB5239182C4EA400AC4238 /* color_space.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5198182C4EA400AC4238 /* color_space.inl */; };
-		7EDB523A182C4EA400AC4238 /* color_space_YCoCg.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB519A182C4EA400AC4238 /* color_space_YCoCg.inl */; };
-		7EDB523B182C4EA400AC4238 /* compatibility.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB519C182C4EA400AC4238 /* compatibility.inl */; };
-		7EDB523C182C4EA400AC4238 /* component_wise.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB519E182C4EA400AC4238 /* component_wise.inl */; };
-		7EDB523D182C4EA400AC4238 /* euler_angles.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51A2182C4EA400AC4238 /* euler_angles.inl */; };
-		7EDB523E182C4EA400AC4238 /* extend.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51A4182C4EA400AC4238 /* extend.inl */; };
-		7EDB523F182C4EA400AC4238 /* extented_min_max.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51A6182C4EA400AC4238 /* extented_min_max.inl */; };
-		7EDB5240182C4EA400AC4238 /* fast_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51A8182C4EA400AC4238 /* fast_exponential.inl */; };
-		7EDB5241182C4EA400AC4238 /* fast_square_root.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51AA182C4EA400AC4238 /* fast_square_root.inl */; };
-		7EDB5242182C4EA400AC4238 /* fast_trigonometry.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51AC182C4EA400AC4238 /* fast_trigonometry.inl */; };
-		7EDB5243182C4EA400AC4238 /* gradient_paint.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51AE182C4EA400AC4238 /* gradient_paint.inl */; };
-		7EDB5244182C4EA400AC4238 /* handed_coordinate_space.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51B0182C4EA400AC4238 /* handed_coordinate_space.inl */; };
-		7EDB5245182C4EA400AC4238 /* inertia.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51B2182C4EA400AC4238 /* inertia.inl */; };
-		7EDB5246182C4EA400AC4238 /* int_10_10_10_2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51B4182C4EA400AC4238 /* int_10_10_10_2.inl */; };
-		7EDB5247182C4EA400AC4238 /* integer.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51B6182C4EA400AC4238 /* integer.inl */; };
-		7EDB5248182C4EA400AC4238 /* intersect.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51B8182C4EA400AC4238 /* intersect.inl */; };
-		7EDB5249182C4EA400AC4238 /* log_base.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51BA182C4EA400AC4238 /* log_base.inl */; };
-		7EDB524A182C4EA400AC4238 /* matrix_cross_product.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51BC182C4EA400AC4238 /* matrix_cross_product.inl */; };
-		7EDB524B182C4EA400AC4238 /* matrix_interpolation.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51BE182C4EA400AC4238 /* matrix_interpolation.inl */; };
-		7EDB524C182C4EA400AC4238 /* matrix_major_storage.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51C0182C4EA400AC4238 /* matrix_major_storage.inl */; };
-		7EDB524D182C4EA400AC4238 /* matrix_operation.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51C2182C4EA400AC4238 /* matrix_operation.inl */; };
-		7EDB524E182C4EA400AC4238 /* matrix_query.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51C4182C4EA400AC4238 /* matrix_query.inl */; };
-		7EDB524F182C4EA400AC4238 /* mixed_product.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51C6182C4EA400AC4238 /* mixed_product.inl */; };
-		7EDB5250182C4EA400AC4238 /* multiple.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51C8182C4EA400AC4238 /* multiple.inl */; };
-		7EDB5251182C4EA400AC4238 /* norm.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51CB182C4EA400AC4238 /* norm.inl */; };
-		7EDB5252182C4EA400AC4238 /* normal.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51CD182C4EA400AC4238 /* normal.inl */; };
-		7EDB5253182C4EA400AC4238 /* normalize_dot.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51CF182C4EA400AC4238 /* normalize_dot.inl */; };
-		7EDB5254182C4EA400AC4238 /* number_precision.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51D1182C4EA400AC4238 /* number_precision.inl */; };
-		7EDB5255182C4EA400AC4238 /* ocl_type.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51D3182C4EA400AC4238 /* ocl_type.inl */; };
-		7EDB5256182C4EA400AC4238 /* optimum_pow.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51D5182C4EA400AC4238 /* optimum_pow.inl */; };
-		7EDB5257182C4EA400AC4238 /* orthonormalize.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51D7182C4EA400AC4238 /* orthonormalize.inl */; };
-		7EDB5258182C4EA400AC4238 /* perpendicular.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51D9182C4EA400AC4238 /* perpendicular.inl */; };
-		7EDB5259182C4EA400AC4238 /* polar_coordinates.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51DB182C4EA400AC4238 /* polar_coordinates.inl */; };
-		7EDB525A182C4EA400AC4238 /* projection.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51DD182C4EA400AC4238 /* projection.inl */; };
-		7EDB525B182C4EA400AC4238 /* quaternion.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51DF182C4EA400AC4238 /* quaternion.inl */; };
-		7EDB525C182C4EA400AC4238 /* raw_data.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51E2182C4EA400AC4238 /* raw_data.inl */; };
-		7EDB525D182C4EA400AC4238 /* rotate_vector.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51E5182C4EA400AC4238 /* rotate_vector.inl */; };
-		7EDB525E182C4EA400AC4238 /* simd_mat4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51E7182C4EA400AC4238 /* simd_mat4.inl */; };
-		7EDB525F182C4EA400AC4238 /* simd_vec4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51E9182C4EA400AC4238 /* simd_vec4.inl */; };
-		7EDB5260182C4EA400AC4238 /* spline.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51EB182C4EA400AC4238 /* spline.inl */; };
-		7EDB5261182C4EA400AC4238 /* std_based_type.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51ED182C4EA400AC4238 /* std_based_type.inl */; };
-		7EDB5262182C4EA400AC4238 /* string_cast.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51EF182C4EA400AC4238 /* string_cast.inl */; };
-		7EDB5263182C4EA400AC4238 /* transform.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51F1182C4EA400AC4238 /* transform.inl */; };
-		7EDB5264182C4EA400AC4238 /* transform2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51F3182C4EA400AC4238 /* transform2.inl */; };
-		7EDB5265182C4EA400AC4238 /* unsigned_int.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51F6182C4EA400AC4238 /* unsigned_int.inl */; };
-		7EDB5266182C4EA400AC4238 /* vec1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51F8182C4EA400AC4238 /* vec1.inl */; };
-		7EDB5267182C4EA400AC4238 /* vector_access.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51FA182C4EA400AC4238 /* vector_access.inl */; };
-		7EDB5268182C4EA400AC4238 /* vector_angle.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51FC182C4EA400AC4238 /* vector_angle.inl */; };
-		7EDB5269182C4EA400AC4238 /* vector_query.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB51FE182C4EA400AC4238 /* vector_query.inl */; };
-		7EDB526A182C4EA400AC4238 /* verbose_operator.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5200182C4EA400AC4238 /* verbose_operator.inl */; };
-		7EDB526B182C4EA400AC4238 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5202182C4EA400AC4238 /* wrap.inl */; };
 		7EDB526E182C536C00AC4238 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB526C182C536C00AC4238 /* ShaderProgram.cpp */; };
 		7EDB5272182D0D8200AC4238 /* simple_vs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB5271182D0D8200AC4238 /* simple_vs.glsl */; };
+		7EED3DF81843D99200AE1FB3 /* GLPlayground-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EA621E918141C8F004FB89B /* GLPlayground-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -785,113 +684,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EED3DF81843D99200AE1FB3 /* GLPlayground-Info.plist in Resources */,
 				462B0732182986CB001C8A11 /* fragmentShader.glsl in Resources */,
-				7EDB523A182C4EA400AC4238 /* color_space_YCoCg.inl in Resources */,
-				7EDB523C182C4EA400AC4238 /* component_wise.inl in Resources */,
-				7EDB525E182C4EA400AC4238 /* simd_mat4.inl in Resources */,
-				7EDB5260182C4EA400AC4238 /* spline.inl in Resources */,
-				7EDB524B182C4EA400AC4238 /* matrix_interpolation.inl in Resources */,
-				7EDB521D182C4EA400AC4238 /* type_mat3x3.inl in Resources */,
-				7EDB5251182C4EA400AC4238 /* norm.inl in Resources */,
-				7EDB5212182C4EA400AC4238 /* intrinsic_geometric.inl in Resources */,
-				7EDB524E182C4EA400AC4238 /* matrix_query.inl in Resources */,
-				7EDB5255182C4EA400AC4238 /* ocl_type.inl in Resources */,
-				7EDB5228182C4EA400AC4238 /* epsilon.inl in Resources */,
-				7EDB5241182C4EA400AC4238 /* fast_square_root.inl in Resources */,
-				7EDB525C182C4EA400AC4238 /* raw_data.inl in Resources */,
-				7EDB5230182C4EA400AC4238 /* reciprocal.inl in Resources */,
-				7EDB522D182C4EA400AC4238 /* noise.inl in Resources */,
-				7EDB523F182C4EA400AC4238 /* extented_min_max.inl in Resources */,
-				7EDB5269182C4EA400AC4238 /* vector_query.inl in Resources */,
-				7EDB5234182C4EA400AC4238 /* ulp.inl in Resources */,
-				7EDB5248182C4EA400AC4238 /* intersect.inl in Resources */,
-				7EDB525F182C4EA400AC4238 /* simd_vec4.inl in Resources */,
-				7EDB5244182C4EA400AC4238 /* handed_coordinate_space.inl in Resources */,
-				7EDB5258182C4EA400AC4238 /* perpendicular.inl in Resources */,
-				7EDB5227182C4EA400AC4238 /* constants.inl in Resources */,
-				7EDB5221182C4EA400AC4238 /* type_mat4x4.inl in Resources */,
-				7EDB5224182C4EA400AC4238 /* type_vec2.inl in Resources */,
-				7EDB5257182C4EA400AC4238 /* orthonormalize.inl in Resources */,
-				7EDB5218182C4EA400AC4238 /* type_mat.inl in Resources */,
-				7EDB524D182C4EA400AC4238 /* matrix_operation.inl in Resources */,
-				7EDB5268182C4EA400AC4238 /* vector_angle.inl in Resources */,
-				7EDB520F182C4EA400AC4238 /* func_vector_relational.inl in Resources */,
-				7EDB5232182C4EA400AC4238 /* type_precision.inl in Resources */,
-				7EDB525D182C4EA400AC4238 /* rotate_vector.inl in Resources */,
-				7EDB5215182C4EA400AC4238 /* intrinsic_vector_relational.inl in Resources */,
-				7EDB5225182C4EA400AC4238 /* type_vec3.inl in Resources */,
-				7EDB521B182C4EA400AC4238 /* type_mat2x4.inl in Resources */,
-				7EDB520D182C4EA400AC4238 /* func_packing.inl in Resources */,
-				7EDB523D182C4EA400AC4238 /* euler_angles.inl in Resources */,
-				7EDB5267182C4EA400AC4238 /* vector_access.inl in Resources */,
-				7EDB5211182C4EA400AC4238 /* intrinsic_exponential.inl in Resources */,
-				7EDB522A182C4EA400AC4238 /* matrix_access.inl in Resources */,
-				7EDB525B182C4EA400AC4238 /* quaternion.inl in Resources */,
-				7EDB521C182C4EA400AC4238 /* type_mat3x2.inl in Resources */,
-				7EDB521E182C4EA400AC4238 /* type_mat3x4.inl in Resources */,
 				7EA621EC18141C8F004FB89B /* InfoPlist.strings in Resources */,
-				7EDB5231182C4EA400AC4238 /* swizzle.inl in Resources */,
-				7EDB5264182C4EA400AC4238 /* transform2.inl in Resources */,
-				7EDB5207182C4EA400AC4238 /* func_common.inl in Resources */,
-				7EDB5254182C4EA400AC4238 /* number_precision.inl in Resources */,
-				7EDB5256182C4EA400AC4238 /* optimum_pow.inl in Resources */,
-				7EDB5237182C4EA400AC4238 /* closest_point.inl in Resources */,
-				7EDB5243182C4EA400AC4238 /* gradient_paint.inl in Resources */,
-				7EDB521F182C4EA400AC4238 /* type_mat4x2.inl in Resources */,
-				7EDB524A182C4EA400AC4238 /* matrix_cross_product.inl in Resources */,
-				7EDB5250182C4EA400AC4238 /* multiple.inl in Resources */,
-				7EDB5239182C4EA400AC4238 /* color_space.inl in Resources */,
-				7EDB5263182C4EA400AC4238 /* transform.inl in Resources */,
-				7EDB520C182C4EA400AC4238 /* func_noise.inl in Resources */,
-				7EDB5223182C4EA400AC4238 /* type_vec1.inl in Resources */,
-				7EDB520A182C4EA400AC4238 /* func_integer.inl in Resources */,
-				7EDB524C182C4EA400AC4238 /* matrix_major_storage.inl in Resources */,
-				7EDB526A182C4EA400AC4238 /* verbose_operator.inl in Resources */,
-				7EDB525A182C4EA400AC4238 /* projection.inl in Resources */,
-				7EDB5236182C4EA400AC4238 /* bit.inl in Resources */,
-				7EDB5217182C4EA400AC4238 /* type_half.inl in Resources */,
-				7EDB5229182C4EA400AC4238 /* half_float.inl in Resources */,
 				7EDB5272182D0D8200AC4238 /* simple_vs.glsl in Resources */,
-				7EDB5247182C4EA400AC4238 /* integer.inl in Resources */,
-				7EDB5214182C4EA400AC4238 /* intrinsic_trigonometric.inl in Resources */,
-				7EDB520E182C4EA400AC4238 /* func_trigonometric.inl in Resources */,
-				7EDB522F182C4EA400AC4238 /* random.inl in Resources */,
-				7EDB5213182C4EA400AC4238 /* intrinsic_matrix.inl in Resources */,
-				7EDB5252182C4EA400AC4238 /* normal.inl in Resources */,
-				7EDB5226182C4EA400AC4238 /* type_vec4.inl in Resources */,
-				7EDB5235182C4EA400AC4238 /* associated_min_max.inl in Resources */,
-				7EDB5233182C4EA400AC4238 /* type_ptr.inl in Resources */,
-				7EDB5259182C4EA400AC4238 /* polar_coordinates.inl in Resources */,
 				462B0733182986CB001C8A11 /* vertexShader_old.glsl in Resources */,
-				7EDB522C182C4EA400AC4238 /* matrix_transform.inl in Resources */,
 				7EA621F218141C8F004FB89B /* Credits.rtf in Resources */,
-				7EDB5262182C4EA400AC4238 /* string_cast.inl in Resources */,
-				7EDB5240182C4EA400AC4238 /* fast_exponential.inl in Resources */,
-				7EDB526B182C4EA400AC4238 /* wrap.inl in Resources */,
-				7EDB523E182C4EA400AC4238 /* extend.inl in Resources */,
-				7EDB5266182C4EA400AC4238 /* vec1.inl in Resources */,
-				7EDB5242182C4EA400AC4238 /* fast_trigonometry.inl in Resources */,
-				7EDB5238182C4EA400AC4238 /* color_cast.inl in Resources */,
-				7EDB5261182C4EA400AC4238 /* std_based_type.inl in Resources */,
-				7EDB522E182C4EA400AC4238 /* quaternion.inl in Resources */,
-				7EDB5253182C4EA400AC4238 /* normalize_dot.inl in Resources */,
-				7EDB522B182C4EA400AC4238 /* matrix_inverse.inl in Resources */,
-				7EDB5245182C4EA400AC4238 /* inertia.inl in Resources */,
-				7EDB520B182C4EA400AC4238 /* func_matrix.inl in Resources */,
-				7EDB5209182C4EA400AC4238 /* func_geometric.inl in Resources */,
-				7EDB5210182C4EA400AC4238 /* intrinsic_common.inl in Resources */,
-				7EDB5265182C4EA400AC4238 /* unsigned_int.inl in Resources */,
-				7EDB5216182C4EA400AC4238 /* type_gentype.inl in Resources */,
-				7EDB5246182C4EA400AC4238 /* int_10_10_10_2.inl in Resources */,
-				7EDB5220182C4EA400AC4238 /* type_mat4x3.inl in Resources */,
-				7EDB5249182C4EA400AC4238 /* log_base.inl in Resources */,
-				7EDB524F182C4EA400AC4238 /* mixed_product.inl in Resources */,
-				7EDB521A182C4EA400AC4238 /* type_mat2x3.inl in Resources */,
-				7EDB5222182C4EA400AC4238 /* type_vec.inl in Resources */,
-				7EDB523B182C4EA400AC4238 /* compatibility.inl in Resources */,
-				7EDB5205182C4EA400AC4238 /* CMakeLists.txt in Resources */,
-				7EDB5208182C4EA400AC4238 /* func_exponential.inl in Resources */,
-				7EDB5219182C4EA400AC4238 /* type_mat2x2.inl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -78,21 +78,6 @@ char* loadFile(const char *filename, GLint *fSize){
 static string read_file(string const name){
 	ifstream file;
     
-//    char *shaderPath = getenv("GL_PLAYGROUND_PATH");
-//    if(!shaderPath) {
-//        printf("GL_PLAYGROUND_PATH variable not defined. Cannot find shaders location!\n");
-//        exit(1);
-//    }
-//    else {
-//        printf("GL_PLAYGROUND_PATH defined: %s\n", shaderPath);
-//    }
-    
-//    char filename[256];
-//    strcpy(filename, shaderPath);
-//    strcat(filename, "/");
-//    strcat(filename, name.c_str());
-    
-//	file.open((string(shaderPath) + name).c_str());
 	file.open((string("/Users/Samoustique/Documents/Programmation/openGL/GLPlayground/GLPlayground/") + name).c_str());
 	string text;
 	file.seekg(0, ios::end);

@@ -16,12 +16,18 @@ string ShaderProgram::readFile(string const name) {
     
     ifstream file;
     
-	file.open((string("/Users/Samoustique/Documents/Programmation/openGL/GLPlayground/GLPlayground/") + name).c_str());
-	string text;
+    // + operator seems to have a bug or uses a wrong encoding. append works fine
+    string path(_baseDir); // duplicate base bundle resources path
+    path.append(name); // append shader's name
+    const char* str = path.c_str(); // get the internal c string
+    //printf("Shader Path: %s\n", str);
+    
+	file.open(str);
 	file.seekg(0, ios::end);
     
     long size = file.tellg();
     
+	string text;
 	text.resize(size); // tellg donne la taille du debut jusqu'au niveau du curseur
 	file.seekg(0, ios::beg);
 	file.read(&text[0], text.size());
@@ -46,12 +52,12 @@ GLuint ShaderProgram::createProgram(string const vsName, string const fsName) {
 	// 1) On envoi les codes sources aux shaders
 	// vertex
 	char const * str = vertCode.c_str();
-	GLint sz = vertCode.size();
+	GLint sz = (GLint)vertCode.size();
 	glShaderSource(vertName, 1, &str,&sz); // 2eme param : le nombre de fichier texte qu'on va lui donner.
     
 	// fragment
 	str = fragCode.c_str();
-	sz = fragCode.size();
+	sz = (GLint)fragCode.size();
 	glShaderSource(fragName, 1, &str,&sz);
     
 	// 2) on compile les shaders

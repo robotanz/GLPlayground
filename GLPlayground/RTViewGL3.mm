@@ -232,7 +232,14 @@ int main(int argc, const char *argv[])
 {
 	pool = [NSAutoreleasePool new];
 	myApp = [NSApplication sharedApplication];
-    // printf("Current Path: %s\n",[[[NSFileManager defaultManager] currentDirectoryPath] cString]);
+
+    // Bundle resources path with appended /, used to read GLSL shaders from Resources
+    NSString *resourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/"];
+    const char *str = [resourcePath cStringUsingEncoding:NSASCIIStringEncoding];
+    //printf("Bundle Path: %s\n", str);
+    
+    // set as base path for shaders (making a C++ string)
+    ShaderProgram::setBaseDirectory(string(str));
     
 	NSRect frame = NSMakeRect(100., 100., win_w, win_h);
     
